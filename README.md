@@ -1,0 +1,14 @@
+Here are the R Markdown files to run the analysis for the paper ***Risk and Resilience: How the development state shapes the pandemic health outcome***. The Markdown files in src contain text and code. The code contains the necessary script to rerun the analysis and the text gives information where to download the original data and background information. Running this code is possible with a single core but multiple cores are recommanded (default settings: 30 Cores). Preprocessed data products are avaible via the open science framework (Link)[https://osf.io/gekzp/overview?view_only=9d602f0d3fad45c1829b2f60c4d4c6f0]. Dont hesitate to ask for any further informations.
+
+
+_______ 
+# Abstract
+
+**Background:** During the global COVID-19 pandemic (2020–2021), excess mortality varied substantially across countries. Notably, upper-middle-income countries experienced greater variability in excess mortality than both low- and high-income countries, despite reporting fewer COVID-19 cases. This disconnect between case numbers and mortality suggests more complex structural vulnerabilities. Socioeconomic conditions and healthcare system performance, collectively referred to as National Framework Conditions (*NFCs*), are likely key determinants of pandemic outcomes. However, the specific relationship between these factors and excess mortality remains poorly understood.
+
+**Methods::** We constructed a predictive model of excess mortality using reported COVID-19 case counts and a wide array of *NFCs* derived from the World Development Indicators (WDI), employing a tree-based machine learning method (XGBoost). To reduce dimensionality, we applied a non-linear method (e-Isomap), extracting latent components called compressed National Framework Conditions (*cNFCs*). We applied SHapley Additive exPlanations (SHAP) to estimate the feature importance and quantify the contribution of each *cNFC*.
+
+**Results:** Our machine learning model explained nearly half of the global variance in excess mortality (*R^2*: median 49.7; IQR: 10.9). SHAP analysis revealed that *cNFCs* contributed most strongly to model predictions of excess mortality (Median: 8.1, IQR: 1.2), followed by *pandemic indicators*, such as reported COVID-19 cases (Median: 6.4, IQR: 0.7). Using explainable AI, we further identified how interconnected socioeconomic conditions, including labor force participation age and health spending, shaped mortality outcomes.
+
+
+**Conclusion** Our findings demonstrate that *cNFCs* outperform conventional epidemiological or preparedness metrics. By capturing latent socioeconomic structures, the *cNFC* framework reveals systemic vulnerabilities that reported COVID-19 cases and other indicators fail to detect. This approach offers a new perspective on
